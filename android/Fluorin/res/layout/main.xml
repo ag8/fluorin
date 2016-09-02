@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="1" >
+
+            <TableRow>
+
+                <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="10dip"
+                        android:src="@drawable/logo"
+                    android:contentDescription="@string/logo_description">
+                </ImageView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="Choose what to send" >
+                </TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clockwise"
+                    android:onClick="sendZero"
+                    android:id="@+id/" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Counterclockwise"
+                    android:onClick="sendOne"
+                    android:id="@+id/" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pause"
+                    android:onClick="sendTwo"
+                    android:id="@+id/" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</ScrollView>
